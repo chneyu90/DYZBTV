@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		04E802351E023ADB00B64CC9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E802341E023ADB00B64CC9 /* AppDelegate.swift */; };
-		04E802371E023ADB00B64CC9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E802361E023ADB00B64CC9 /* ViewController.swift */; };
 		04E8023A1E023ADC00B64CC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04E802381E023ADC00B64CC9 /* Main.storyboard */; };
 		04E8023C1E023ADC00B64CC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04E8023B1E023ADC00B64CC9 /* Assets.xcassets */; };
 		04E8023F1E023ADC00B64CC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04E8023D1E023ADC00B64CC9 /* LaunchScreen.storyboard */; };
@@ -36,7 +35,6 @@
 /* Begin PBXFileReference section */
 		04E802311E023ADB00B64CC9 /* DYZBTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DYZBTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04E802341E023ADB00B64CC9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		04E802361E023ADB00B64CC9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		04E802391E023ADC00B64CC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		04E8023B1E023ADC00B64CC9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04E8023E1E023ADC00B64CC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -97,8 +95,8 @@
 		04E802331E023ADB00B64CC9 /* DYZBTV */ = {
 			isa = PBXGroup;
 			children = (
+				04E802621E02490600B64CC9 /* Classes */,
 				04E802341E023ADB00B64CC9 /* AppDelegate.swift */,
-				04E802361E023ADB00B64CC9 /* ViewController.swift */,
 				04E802381E023ADC00B64CC9 /* Main.storyboard */,
 				04E8023B1E023ADC00B64CC9 /* Assets.xcassets */,
 				04E8023D1E023ADC00B64CC9 /* LaunchScreen.storyboard */,
@@ -123,6 +121,73 @@
 				04E802561E023ADC00B64CC9 /* Info.plist */,
 			);
 			path = DYZBTVUITests;
+			sourceTree = "<group>";
+		};
+		04E802621E02490600B64CC9 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				04E802681E02490600B64CC9 /* Tools */,
+				04E802661E02490600B64CC9 /* Main */,
+				04E802631E02490600B64CC9 /* Follow(关注) */,
+				04E802641E02490600B64CC9 /* Home(首页) */,
+				04E802651E02490600B64CC9 /* Live(直播) */,
+				04E802671E02490600B64CC9 /* Profile(个人中心) */,
+				04E802691E02490600B64CC9 /* Vender */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		04E802631E02490600B64CC9 /* Follow(关注) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Follow(关注)";
+			path = Follow;
+			sourceTree = "<group>";
+		};
+		04E802641E02490600B64CC9 /* Home(首页) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Home(首页)";
+			path = Home;
+			sourceTree = "<group>";
+		};
+		04E802651E02490600B64CC9 /* Live(直播) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Live(直播)";
+			path = Live;
+			sourceTree = "<group>";
+		};
+		04E802661E02490600B64CC9 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		04E802671E02490600B64CC9 /* Profile(个人中心) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Profile(个人中心)";
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		04E802681E02490600B64CC9 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		04E802691E02490600B64CC9 /* Vender */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vender;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +324,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04E802371E023ADB00B64CC9 /* ViewController.swift in Sources */,
 				04E802351E023ADB00B64CC9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,7 +476,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = DYZBTV/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.app.DYZBTV;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -424,7 +490,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = DYZBTV/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.app.DYZBTV;
 				PRODUCT_NAME = "$(TARGET_NAME)";
